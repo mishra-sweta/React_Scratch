@@ -1,0 +1,46 @@
+## episode 2 ##
+
+npm is not node package manager, but its a package manager which is extremely useful and powerful
+
+package.json contains the configuration file of the app when we initialise npm in our app that contains all scripts and dependencies versions(the vague )
+package-lock.json contains the specific versions of all the dependencies
+
+^ and ~ caret and tilldate is written in front of the version of the module version means 
+^ update the version to the slightly updated version (minor upgrade)
+~ updates to the latest version which might break my app.(major upgrade)
+
+nod_modules is huge folder that contains all the code related to the installed dependencies which might contain dependencies that the one installed is dependent on and so on like a tree,
+thus the size of the node_modules.  
+These dependencies are called transitive dependencies.
+
+Its like a dependency tree
+
+####################
+
+npm - install a package
+npx - excecute a package
+
+
+CDN links are not preffered way of getting react library
+CDN calls are expensive and less optimised, if we install react as dependency makes it faster and less calls are made
+
+
+#Parcel - Bundler (uses other packages and manages everything)
+
+- Dev Build 
+- Local Server
+- HMR = Hot Module Replacement
+- File Watching ALgorithm
+- Catching - Faster Builds
+- Image Optimization
+- Minification
+- Bundling 
+- Compress
+- Consistent Hashing
+- Code Splitting
+- Differential Bundling - support older browsers
+- Diagnostic
+- Error Handling
+- HTTPs
+- Tree Shaking - remove unused code
+- Different dev and prod bundles
