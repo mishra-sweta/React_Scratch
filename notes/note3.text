@@ -1,0 +1,48 @@
+---------------- JSX (JavaScript Syntax )-----------------
+
+JSX is not part of react it's independent of React - JSX makes it easy to create a react application making code easy to read and understand.
+A convention that merges HTML and JS together.
+
+JSX is not HTML inside JavaScript. It's a HTML or XML like syntax. 
+
+const heading = React.createElement(
+    "h1",
+    { id: "heading"},
+    "Namaste React"
+); 
+
+equivalent to
+
+const heading = <h1 id:"heading">Namaste React</h1> (which is transpiled before it reaches the JS - by Parcel - by Babel)
+
+Babel(compiler/transpiler) - a librabry that coverts JSX into that is understood by JS engine or React
+
+How ? 
+JSX =(babel)> React.createElement => JS Object => HTMLElement(render)
+
+- to give attributes of JSX we need to use camelCase
+- if you write JSX in one line it;s correct but if it's more than 1 line we need to use () so babel knows where to start and end.
+
+------------------------React Component----------------------------
+
+//Class Based Components - OLD
+//Functional Based Components - NEW
+
+React component is nothing but a JS function that returns a piece of JSX or react element - naming convention start with Capital
+
+const number = 1000
+const e = <span>React element</span>
+
+const HeadingComponent = () => {
+    <div id:"container">
+    <h2>{number}</h2>-------------------------You can put JS code or React element inside JSX using {}
+    {e}
+    <Title /> --------------------------------Another component in a component called Component Composition 
+    <h1 className="heading">Namaste React</h1>
+    </div>
+}
+
+A component can also be called in a {} like {Title()} ------as it is just a JS function at the end of the day
+
+JSX wont blindly run a data, it will sanitize a data
+
